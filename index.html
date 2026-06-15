@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OPENHOME – Luxury Real Estate & Investment</title>
+  <meta name="description" content="OPENHOME – The world's leading private real estate investment firm. Exclusive luxury properties and institutional-grade investments across the globe." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ───────────── NAVIGATION ───────────── -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo">
+        <span class="logo-mark"></span>OPENHOME
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#properties" class="nav-link">Properties</a>
+        <a href="#investments" class="nav-link">Investments</a>
+        <a href="#about" class="nav-link">About Us</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#testimonials" class="nav-link">Testimonials</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+      <a href="#contact" class="btn-outline nav-cta" data-testid="btn-nav-contact">Inquire</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ───────────── HERO ───────────── -->
+  <section id="home" class="hero">
+    <div class="hero-bg" id="heroBg"></div>
+    <div class="hero-overlay"></div>
+    <canvas id="particles"></canvas>
+    <div class="hero-glow" id="heroGlow"></div>
+
+    <div class="hero-content fade-in">
+      <p class="section-label">Global Real Estate & Investment</p>
+      <h1 class="hero-title">Invest in the<br />Future of Real Estate</h1>
+      <p class="hero-subtitle">Exclusive access to off-market luxury properties and high-yield institutional investments across the globe.</p>
+      <div class="hero-btns">
+        <a href="#properties" class="btn-primary" data-testid="btn-explore">Explore Properties</a>
+        <a href="#contact" class="btn-ghost" data-testid="btn-contact">Contact Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────── PROPERTIES ───────────── -->
+  <section id="properties" class="section bg-card">
+    <div class="container">
+      <div class="section-header-split reveal">
+        <div>
+          <p class="section-label">Featured Portfolio</p>
+          <h2 class="section-title">Curated Excellence</h2>
+        </div>
+        <a href="#gallery" class="link-gold">View All Properties</a>
+      </div>
+
+      <div class="property-grid">
+        <div class="property-card tilt-card reveal" data-testid="card-property-0">
+          <div class="property-img" style="background-image:url('https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=900&auto=format&fit=crop')"></div>
+          <div class="property-overlay"></div>
+          <div class="property-info">
+            <p class="property-location">New York, USA</p>
+            <h3 class="property-name">The Crown Penthouse</h3>
+            <p class="property-desc">Full-floor residence with 360-degree views of Central Park and the Manhattan skyline.</p>
+            <div class="property-footer">
+              <span class="property-price">$24.5M</span>
+              <button class="btn-outline-sm">View Details</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="property-card tilt-card reveal" data-delay="100" data-testid="card-property-1">
+          <div class="property-img" style="background-image:url('https://images.unsplash.com/photo-1613490493576-7fde63acd811?q=80&w=900&auto=format&fit=crop')"></div>
+          <div class="property-overlay"></div>
+          <div class="property-info">
+            <p class="property-location">Côte d'Azur, France</p>
+            <h3 class="property-name">Villa Azure</h3>
+            <p class="property-desc">Mediterranean sanctuary featuring private beach access and an infinity pool merging with the sea.</p>
+            <div class="property-footer">
+              <span class="property-price">$18.2M</span>
+              <button class="btn-outline-sm">View Details</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="property-card tilt-card reveal" data-delay="200" data-testid="card-property-2">
+          <div class="property-img" style="background-image:url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=900&auto=format&fit=crop')"></div>
+          <div class="property-overlay"></div>
+          <div class="property-info">
+            <p class="property-location">Dubai, UAE</p>
+            <h3 class="property-name">Oasis Estate</h3>
+            <p class="property-desc">Architectural masterpiece on Palm Jumeirah with bespoke interiors and private mooring.</p>
+            <div class="property-footer">
+              <span class="property-price">$32.0M</span>
+              <button class="btn-outline-sm">View Details</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────── WHY OPENHOME ───────────── -->
+  <section id="services" class="section bg-dark">
+    <div class="container">
+      <div class="text-center reveal">
+        <p class="section-label">Our Distinction</p>
+        <h2 class="section-title">Why <span class="gold">OPENHOME</span></h2>
+      </div>
+      <div class="why-grid">
+        <div class="why-card glass-card reveal" data-testid="card-why-0">
+          <div class="why-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3>Trusted Investments</h3>
+          <p>Over a decade of institutional-grade due diligence protecting capital across every market cycle.</p>
+          <div class="card-bar"></div>
+        </div>
+        <div class="why-card glass-card reveal" data-delay="100" data-testid="card-why-1">
+          <div class="why-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+          </div>
+          <h3>Luxury Properties</h3>
+          <p>Exclusive access to off-market estates, penthouses, and commercial towers in premier global cities.</p>
+          <div class="card-bar"></div>
+        </div>
+        <div class="why-card glass-card reveal" data-delay="200" data-testid="card-why-2">
+          <div class="why-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3>Professional Team</h3>
+          <p>Our advisors are veterans of sovereign wealth funds, private equity, and Tier-1 investment banks.</p>
+          <div class="card-bar"></div>
+        </div>
+        <div class="why-card glass-card reveal" data-delay="300" data-testid="card-why-3">
+          <div class="why-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </div>
+          <h3>Global Opportunities</h3>
+          <p>A portfolio spanning five continents — from Manhattan to Monaco, Dubai to Singapore.</p>
+          <div class="card-bar"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────── STATS ───────────── -->
+  <section id="stats" class="stats-section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item reveal" data-testid="stat-item-0">
+          <div class="stat-number" data-target="500" data-suffix="+">0+</div>
+          <div class="stat-label">Properties Sold</div>
+        </div>
+        <div class="stat-item reveal" data-delay="100" data-testid="stat-item-1">
+          <div class="stat-number" data-target="2400" data-suffix="">0</div>
+          <div class="stat-label">Active Investors</div>
+        </div>
+        <div class="stat-item reveal" data-delay="200" data-testid="stat-item-2">
+          <div class="stat-number" data-target="85" data-suffix="">0</div>
+          <div class="stat-label">Projects Completed</div>
+        </div>
+        <div class="stat-item reveal" data-delay="300" data-testid="stat-item-3">
+          <div class="stat-number" data-target="12" data-suffix="">0</div>
+          <div class="stat-label">Years of Excellence</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────── INVESTMENTS ───────────── -->
+  <section id="investments" class="section bg-card">
+    <div class="container">
+      <div class="invest-grid">
+        <div class="invest-left reveal">
+          <p class="section-label">Investment Returns</p>
+          <h2 class="section-title">Capital that<br /><span class="gold">compounds with purpose</span></h2>
+          <p class="body-text">Our institutional strategy consistently outperforms global real estate indices — delivering superior risk-adjusted returns to our investor community.</p>
+
+          <div class="bar-chart">
+            <div class="bars" id="barsContainer">
+              <div class="bar-col"><div class="bar" data-pct="52"></div><div class="bar-label">2020</div></div>
+              <div class="bar-col"><div class="bar" data-pct="67"></div><div class="bar-label">2021</div></div>
+              <div class="bar-col"><div class="bar" data-pct="74"></div><div class="bar-label">2022</div></div>
+              <div class="bar-col"><div class="bar" data-pct="83"></div><div class="bar-label">2023</div></div>
+              <div class="bar-col"><div class="bar" data-pct="91"></div><div class="bar-label">2024</div></div>
+            </div>
+            <p class="chart-caption">Average Portfolio ROI by Year</p>
+          </div>
+
+          <div class="benefits-list">
+            <div class="benefit-item"><span class="check">✓</span> Full ownership rights and title deeds</div>
+            <div class="benefit-item"><span class="check">✓</span> Quarterly audited portfolio statements</div>
+            <div class="benefit-item"><span class="check">✓</span> Priority access to off-market listings</div>
+            <div class="benefit-item"><span class="check">✓</span> Dedicated relationship manager</div>
+            <div class="benefit-item"><span class="check">✓</span> Tax-optimised international structures</div>
+            <div class="benefit-item"><span class="check">✓</span> Exit liquidity within 90 days</div>
+          </div>
+        </div>
+
+        <div class="invest-right">
+          <div class="tier-card glass-card reveal" data-testid="card-tier-0">
+            <div class="tier-header">
+              <div><p class="section-label">Entry Tier</p><h3>Private</h3><p class="tier-min">Minimum: <strong>$500K</strong></p></div>
+              <div class="tier-roi"><p class="tier-roi-label">Target ROI</p><p class="tier-roi-value">8–12%</p></div>
+            </div>
+            <div class="tier-divider"></div>
+          </div>
+          <div class="tier-card tier-featured glass-card reveal" data-delay="100" data-testid="card-tier-1">
+            <div class="tier-badge">Popular</div>
+            <div class="tier-header">
+              <div><p class="section-label">Prestige Tier</p><h3>Prestige</h3><p class="tier-min">Minimum: <strong>$2M</strong></p></div>
+              <div class="tier-roi"><p class="tier-roi-label">Target ROI</p><p class="tier-roi-value">12–18%</p></div>
+            </div>
+            <div class="tier-divider"></div>
+          </div>
+          <div class="tier-card glass-card reveal" data-delay="200" data-testid="card-tier-2">
+            <div class="tier-header">
+              <div><p class="section-label">Elite Tier</p><h3>Sovereign</h3><p class="tier-min">Minimum: <strong>$10M+</strong></p></div>
+              <div class="tier-roi"><p class="tier-roi-label">Target ROI</p><p class="tier-roi-value">18–25%</p></div>
+            </div>
+            <div class="tier-divider"></div>
+          </div>
+          <a href="#contact" class="btn-outline w-full text-center mt-4 block" data-testid="btn-start-investing">Begin Your Investment Journey</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────── TESTIMONIALS ───────────── -->
+  <section id="testimonials" class="section bg-dark">
+    <div class="container">
+      <div class="text-center reveal">
+        <p class="section-label">Investor Voices</p>
+        <h2 class="section-title">What Our Partners Say</h2>
+      </div>
+      <div class="testimonial-wrapper">
+        <div class="testimonial-slides" id="testimonialSlides">
+          <div class="testimonial-slide glass-card active" data-testid="testimonial-card-0">
+            <div class="quote-mark">"</div>
+            <p class="quote-text">OPENHOME delivered a 22% return on our Dubai portfolio in 18 months. The level of discretion, intelligence, and access they bring is unmatched in any market I have operated in.</p>
+            <div class="quote-author">
+              <div class="avatar">RV</div>
+              <div><div class="author-name">Rafaël van der Berg</div><div class="author-role">Family Office Director, Amsterdam</div></div>
+            </div>
+          </div>
+          <div class="testimonial-slide glass-card" data-testid="testimonial-card-1">
+            <div class="quote-mark">"</div>
+            <p class="quote-text">The Prestige tier has been a core allocation for three of our UHNW clients for over two years. Not once have we had cause for concern — only consistent, audited outperformance.</p>
+            <div class="quote-author">
+              <div class="avatar">SK</div>
+              <div><div class="author-name">Sophia Karamanlis</div><div class="author-role">Private Wealth Manager, Athens</div></div>
+            </div>
+          </div>
+          <div class="testimonial-slide glass-card" data-testid="testimonial-card-2">
+            <div class="quote-mark">"</div>
+            <p class="quote-text">As a professional allocator, I hold OPENHOME to the same standard as a Tier-1 GP. They exceed it. Their market intelligence on off-market assets is genuinely rare.</p>
+            <div class="quote-author">
+              <div class="avatar">JL</div>
+              <div><div class="author-name">James Langford</div><div class="author-role">Hedge Fund Principal, New York</div></div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-dots" id="testimonialDots">
+          <button class="dot active" data-testid="btn-testimonial-0"></button>
+          <button class="dot" data-testid="btn-testimonial-1"></button>
+          <button class="dot" data-testid="btn-testimonial-2"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────── GALLERY ───────────── -->
+  <section id="gallery" class="section bg-card">
+    <div class="container">
+      <div class="text-center reveal">
+        <p class="section-label">Portfolio Gallery</p>
+        <h2 class="section-title">Spaces of <span class="gold">Distinction</span></h2>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item reveal" data-testid="gallery-item-0">
+          <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=900&auto=format&fit=crop" alt="Palm Jumeirah, Dubai" loading="lazy" />
+          <div class="gallery-overlay"><span>Palm Jumeirah, Dubai</span></div>
+        </div>
+        <div class="gallery-item reveal" data-delay="80" data-testid="gallery-item-1">
+          <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=900&auto=format&fit=crop" alt="Beverly Hills, California" loading="lazy" />
+          <div class="gallery-overlay"><span>Beverly Hills, California</span></div>
+        </div>
+        <div class="gallery-item reveal" data-delay="160" data-testid="gallery-item-2">
+          <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?q=80&w=900&auto=format&fit=crop" alt="Côte d'Azur, France" loading="lazy" />
+          <div class="gallery-overlay"><span>Côte d'Azur, France</span></div>
+        </div>
+        <div class="gallery-item reveal" data-delay="0" data-testid="gallery-item-3">
+          <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?q=80&w=900&auto=format&fit=crop" alt="Monaco Luxury Interior" loading="lazy" />
+          <div class="gallery-overlay"><span>Luxury Interior, Monaco</span></div>
+        </div>
+        <div class="gallery-item reveal" data-delay="80" data-testid="gallery-item-4">
+          <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?q=80&w=900&auto=format&fit=crop" alt="Manhattan Penthouse" loading="lazy" />
+          <div class="gallery-overlay"><span>Penthouse, Manhattan</span></div>
+        </div>
+        <div class="gallery-item reveal" data-delay="160" data-testid="gallery-item-5">
+          <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=900&auto=format&fit=crop" alt="Private Villa, Marbella" loading="lazy" />
+          <div class="gallery-overlay"><span>Private Villa, Marbella</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose" data-testid="btn-lightbox-close">✕</button>
+    <img id="lightboxImg" src="" alt="" />
+    <p id="lightboxCaption" class="lightbox-caption"></p>
+  </div>
+
+  <!-- ───────────── ABOUT ───────────── -->
+  <section id="about" class="section bg-dark">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-img-wrap reveal">
+          <img src="https://images.unsplash.com/photo-1600210492493-0946911123ea?q=80&w=900&auto=format&fit=crop" alt="OPENHOME Luxury Interior" class="about-img" loading="lazy" />
+          <div class="about-badge">
+            <div class="about-badge-num">12+</div>
+            <div class="about-badge-label">Years Established</div>
+          </div>
+        </div>
+        <div class="about-text reveal" data-delay="150">
+          <p class="section-label">Our Story</p>
+          <h2 class="section-title">A New Standard for<br /><span class="gold">Global Real Estate</span></h2>
+          <p class="body-text">Founded in 2012 by a team of former Goldman Sachs bankers and Sotheby's estate specialists, OPENHOME was built on a single conviction: that the world's most valuable real estate should be accessible to those with the vision to invest in it.</p>
+          <p class="body-text">We operate at the intersection of institutional rigour and bespoke private client service — combining deep market research with relationships that have taken a decade to build across more than 30 countries.</p>
+          <p class="body-text">Every asset is individually underwritten. Every client relationship is personally managed. There is no automation in our advisory process.</p>
+          <div class="pillars">
+            <div class="pillar"><p class="section-label">Mission</p><p>To deliver generational wealth through extraordinary real estate.</p></div>
+            <div class="pillar"><p class="section-label">Vision</p><p>A world where landmark assets belong to those who value them most.</p></div>
+            <div class="pillar"><p class="section-label">Philosophy</p><p>Patient capital. Precise execution. Permanent results.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────── CONTACT ───────────── -->
+  <section id="contact" class="section bg-card">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-left reveal">
+          <p class="section-label">Private Enquiries</p>
+          <h2 class="section-title">Begin the<br /><span class="gold">Conversation</span></h2>
+          <p class="body-text">Our advisors respond to qualified enquiries within 24 hours. All information shared is treated with absolute discretion.</p>
+          <div class="contact-info-list">
+            <div class="contact-info-item">
+              <div class="contact-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div><p class="section-label">Headquarters</p><p>1 World Trade Center, New York, NY 10007</p></div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.06 6.06l.84-.84a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 17.3z"/></svg>
+              </div>
+              <div><p class="section-label">Private Line</p><p>+1 (212) 555 0190</p></div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div><p class="section-label">Confidential Email</p><p>private@openhome.com</p></div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-right reveal" data-delay="150">
+          <form class="contact-form glass-card" id="contactForm" data-testid="contact-form">
+            <div class="form-group">
+              <label class="section-label" for="fname">Full Name</label>
+              <input type="text" id="fname" placeholder="Alexander von Richter" required data-testid="input-name" />
+            </div>
+            <div class="form-group">
+              <label class="section-label" for="femail">Email Address</label>
+              <input type="email" id="femail" placeholder="a.vonrichter@family.com" required data-testid="input-email" />
+            </div>
+            <div class="form-group">
+              <label class="section-label" for="fphone">Phone Number</label>
+              <input type="tel" id="fphone" placeholder="+1 (212) 555 0100" data-testid="input-phone" />
+            </div>
+            <div class="form-group">
+              <label class="section-label" for="fmessage">Message</label>
+              <textarea id="fmessage" rows="4" placeholder="Please share the nature of your enquiry and the approximate scale of investment you are considering..." required data-testid="input-message"></textarea>
+            </div>
+            <button type="submit" class="btn-outline w-full" data-testid="btn-submit-contact">Submit Private Enquiry</button>
+          </form>
+          <div class="form-success" id="formSuccess">
+            <div class="success-icon">✓</div>
+            <h3>Enquiry Received</h3>
+            <p>A senior advisor will contact you within 24 hours on the details provided.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────── FOOTER ───────────── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="nav-logo footer-logo">OPENHOME</div>
+          <p>The world's leading private real estate investment firm. Discretion, excellence, and generational returns — since 2012.</p>
+          <div class="social-links">
+            <a href="#" class="social-btn" data-testid="link-social-li">LI</a>
+            <a href="#" class="social-btn" data-testid="link-social-tw">TW</a>
+            <a href="#" class="social-btn" data-testid="link-social-ig">IG</a>
+            <a href="#" class="social-btn" data-testid="link-social-yt">YT</a>
+          </div>
+        </div>
+        <div class="footer-links-col">
+          <p class="section-label footer-col-title">Quick Links</p>
+          <a href="#properties">Properties</a>
+          <a href="#investments">Investments</a>
+          <a href="#about">About Us</a>
+          <a href="#services">Services</a>
+          <a href="#testimonials">Testimonials</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-links-col">
+          <p class="section-label footer-col-title">Global Offices</p>
+          <span>New York · 1 World Trade Center</span>
+          <span>London · Mayfair</span>
+          <span>Dubai · DIFC</span>
+          <span>Singapore · Marina Bay</span>
+          <span>Monaco · Monte Carlo</span>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="footerYear"></span> OPENHOME International Ltd. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Regulatory Notice</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
